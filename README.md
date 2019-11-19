@@ -24,4 +24,4 @@ See the [dedicated page](https://github.com/marcosecchi/ai-brain-graph-for-corgi
 
 ## Documentation
 
-Tool documentation can be found on the [project Wiki]().
+Tool documentation can be found on the [project Wiki](https://github.com/marcosecchi/ai-brain-graph-for-topdown-engine/wiki).
