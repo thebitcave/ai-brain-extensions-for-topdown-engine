@@ -19,6 +19,5 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             NodeEditorGUILayout.PropertyField(_newWeapon);
             serializedObject.ApplyModifiedProperties();
         }
-
     }
 }
