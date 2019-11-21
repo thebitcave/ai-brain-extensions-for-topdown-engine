@@ -8,7 +8,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
     /// <summary>
     /// A node representing a TopDown Engine <see cref="MoreMountains.TopDownEngine.AIActionMoveRandomly3D"/> action.
     /// </summary>
-    [CreateNodeMenu("AI/Action/Move Randomly 3D")]
+    [CreateNodeMenu("AI/Action/3D/Move Randomly")]
     public class AIActionMoveRandomly3DNode : AIActionNode
     {
         [Header("Duration")]

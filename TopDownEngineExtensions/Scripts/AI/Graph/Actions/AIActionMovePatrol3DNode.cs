@@ -8,7 +8,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
     /// <summary>
     /// A node representing a TopDown Engine <see cref="MoreMountains.TopDownEngine.AIActionMovePatrol3D"/> action.
     /// </summary>
-    [CreateNodeMenu("AI/Action/Move Patrol 3D")]
+    [CreateNodeMenu("AI/Action/3D/Move Patrol")]
     public class AIActionMovePatrol3DNode : AIActionNode
     {
         [Header("Obstacle Detection")]
