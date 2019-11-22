@@ -16,7 +16,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             _groundedBufferDelay = serializedObject.FindProperty("groundedBufferDelay");
 
             serializedObject.Update();
-            EditorGUIUtility.labelWidth = 120;
+            EditorGUIUtility.labelWidth = 160;
             NodeEditorGUILayout.PropertyField(_groundedBufferDelay);
             serializedObject.ApplyModifiedProperties();
         }
