@@ -5667,7 +5667,6 @@ GameObject:
   - component: {fileID: 1393211586930042866}
   - component: {fileID: 6733512370672742688}
   - component: {fileID: 6570479306520921669}
-  - component: {fileID: 2189494508754954816}
   m_Layer: 13
   m_Name: PatrolAndMoveAI_Generated
   m_TagString: Untagged
@@ -5682,7 +5681,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6144315931299460604}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -30.1, y: 0.05, z: 18.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6317,22 +6316,6 @@ MonoBehaviour:
   Target: {fileID: 0}
   ActionsFrequency: 0
   DecisionFrequency: 0
---- !u!114 &2189494508754954816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6144315931299460604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ec7461de2ec4542af5cecbeacbe763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiBrainGraph: {fileID: 0}
-  brainActive: 1
-  actionsFrequency: 0
-  decisionFrequency: 0
 --- !u!1 &6144331521112310038
 GameObject:
   m_ObjectHideFlags: 0
