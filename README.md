@@ -4,9 +4,9 @@ This is an extension for the Unity3D [Top Down Engine](https://assetstore.unity.
 
 For a tour of the [TopDown Engine](https://www.youtube.com/watch?v=hLiyTSvY9s0&feature=emb_logo) features, please check this video: [https://www.youtube.com/watch?v=b8bAt1i9gfo](https://www.youtube.com/watch?v=b8bAt1i9gfo).
 
-_Note: this package depends on [AI Brain Graph for MMTools](https://github.com/thebitcave/ai-brain-graph-for-mmtools)_
+_Note: this package depends on [AI Brain Extensions for MMTools](https://github.com/thebitcave/ai-brain-extensions-for-mmtools)_
 
-![Image of AI Brain Graph](images/aibrain_graph.png)
+![Image of AI Brain Graph](https://github.com/thebitcave/ai-brain-graph-for-corgi-engine/blob/docs/doc-images/tutorial_006.png)
 
 ## Features
 
