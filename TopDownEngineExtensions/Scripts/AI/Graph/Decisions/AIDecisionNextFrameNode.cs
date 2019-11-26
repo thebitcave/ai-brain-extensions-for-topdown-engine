@@ -6,15 +6,14 @@ using TheBitCave.MMToolsExtensions.AI.Graph;
 namespace TheBitCave.TopDownEngineExensions.AI.Graph
 {
     /// <summary>
-    /// A node representing a TopDown Engine <see cref="MoreMountains.TopDownEngine.AIDecisionDetectTargetConeOfVision2D"/> decision.
+    /// A node representing a TopDown Engine <see cref="MoreMountains.TopDownEngine.AIDecisionNextFrame"/> decision.
     /// </summary>
-    [CreateNodeMenu("AI/Decision/2D/Detect Target Cone Of Vision")]
-    public class AIDecisionDetectTargetConeOfVision2DNode : AIDecisionNode
+    [CreateNodeMenu("AI/Decision/Next Frame")]
+    public class AIDecisionNextFrameNode : AIDecisionNode
     {
-
         public override AIDecision AddDecisionComponent(GameObject go)
         {
-            var decision = go.AddComponent<AIDecisionDetectTargetConeOfVision2D>();
+            var decision = go.AddComponent<AIDecisionNextFrame>();
             decision.Label = label;
             return decision;
         }

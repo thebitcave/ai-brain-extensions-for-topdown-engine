@@ -4,19 +4,19 @@ using XNodeEditor;
 
 namespace TheBitCave.TopDownEngineExensions.AI.Graph
 {
-    [CustomNodeEditor(typeof(AIActionChangeWeaponNode))]
-    public class AIActionChangeWeaponNodeEditor : AIActionNodeEditor
+    [CustomNodeEditor(typeof(AIDecisionTimeSinceStartNode))]
+    public class AIDecisionTimeSinceStartNodeEditor : AIDecisionNodeEditor
     {
-        private SerializedProperty _newWeapon;
-
+        private SerializedProperty _afterTime;
+        
         public override void OnBodyGUI()
         {
             base.OnBodyGUI();
             
-            _newWeapon = serializedObject.FindProperty("newWeapon");
+            _afterTime = serializedObject.FindProperty("afterTime");
 
             serializedObject.Update();
-            NodeEditorGUILayout.PropertyField(_newWeapon);
+            NodeEditorGUILayout.PropertyField(_afterTime);
             serializedObject.ApplyModifiedProperties();
         }
     }
