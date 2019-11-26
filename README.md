@@ -18,7 +18,7 @@ _Note: this package depends on [AI Brain Extensions for MMTools](https://github.
 
 ## 2. AI Brain Debugger (Experimental)
 
-The debugger tool is still experimentan and a work in progress, but will let you check some inner workings of an AI Brain.
+The debugger tool is still experimental and a work in progress, but will let you check some inner workings of an AI Brain.
 
 ![AI Brain Debugger](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/blob/docs/doc-images/aibrain_debugger.png)
 
