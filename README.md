@@ -1,10 +1,14 @@
 # AI Brain Graph for TopDown Engine
 
-This is an extension for the Unity3D [Top Down Engine](https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636?aid=1011lHJn). It uses [xNode](https://github.com/Siccity/xNode) to create AI Brain graphs that can generate regular TopDown Engine AI systems.
+This is a set of extensions for the Unity3D [Top Down Engine](https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636?aid=1011lHJn). It uses [xNode](https://github.com/Siccity/xNode) to create AI Brain graphs that can generate regular TopDown Engine AI systems.
 
 For a tour of the [TopDown Engine](https://www.youtube.com/watch?v=hLiyTSvY9s0&feature=emb_logo) features, please check this video: [https://www.youtube.com/watch?v=b8bAt1i9gfo](https://www.youtube.com/watch?v=b8bAt1i9gfo).
 
-_Note: this package depends on [AI Brain Extensions for MMTools](https://github.com/thebitcave/ai-brain-extensions-for-mmtools)_
+_Note: this package depends on [AI Brain Extensions for MMTools](https://github.com/thebitcave/ai-brain-estensions-for-mmtools)_
+
+## 1. AI Brain Graph
+
+This tool uses [xNode](https://github.com/Siccity/xNode) to create AI Brain graphs that can generate regular Corgi AI systems.
 
 ## Features
 
