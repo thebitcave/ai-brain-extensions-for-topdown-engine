@@ -6,8 +6,6 @@ For a tour of the [TopDown Engine](https://www.youtube.com/watch?v=hLiyTSvY9s0&f
 
 _Note: this package depends on [AI Brain Extensions for MMTools](https://github.com/thebitcave/ai-brain-extensions-for-mmtools)_
 
-![Image of AI Brain Graph](https://github.com/thebitcave/ai-brain-graph-for-corgi-engine/blob/docs/doc-images/tutorial_006.png)
-
 ## Features
 
 * AI Brain Graph including:
@@ -17,6 +15,19 @@ _Note: this package depends on [AI Brain Extensions for MMTools](https://github.
   * Decisions
 * _AI Brain Generator_: to create TopDown Engine AIBrain systems (with AIDecisions and AIActions)
 * _AI pluggable brain_: to generate AI systems at runtime
+
+## 2. AI Brain Debugger (Experimental)
+
+The debugger tool is still experimentan and a work in progress, but will let you check some inner workings of an AI Brain.
+
+![AI Brain Debugger](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/blob/docs/doc-images/aibrain_debugger.png)
+
+### Features
+
+* _AIBrainDebuggable_ component
+* _AIBrain_ current/previous states tracking
+* Force transitions during gameplay
+* Force brain target during gameplay
 
 ## Release Notes
 
