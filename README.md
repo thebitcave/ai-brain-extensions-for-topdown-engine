@@ -10,6 +10,8 @@ _Note: this package depends on [AI Brain Extensions for MMTools](https://github.
 
 This tool uses [xNode](https://github.com/Siccity/xNode) to create AI Brain graphs that can generate regular Corgi AI systems.
 
+![AI Brain Graph](https://github.com/thebitcave/ai-brain-extensions-for-topdown-engine/blob/docs/doc-images/aibrain_graph.png)
+
 ## Features
 
 * AI Brain Graph including:
@@ -24,7 +26,7 @@ This tool uses [xNode](https://github.com/Siccity/xNode) to create AI Brain grap
 
 The debugger tool is still experimental and a work in progress, but will let you check some inner workings of an AI Brain.
 
-![AI Brain Debugger](https://github.com/thebitcave/ai-brain-estensions-for-mmtools/blob/docs/doc-images/aibrain_debugger.png)
+![AI Brain Debugger](https://github.com/thebitcave/ai-brain-extensions-for-topdown-engine/blob/docs/doc-images/aibrain_debugger.png)
 
 ### Features
 
