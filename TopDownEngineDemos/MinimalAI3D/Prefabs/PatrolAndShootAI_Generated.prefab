@@ -11490,7 +11490,7 @@ GameObject:
   - component: {fileID: 6249886947319323667}
   - component: {fileID: 1984890748663183856}
   m_Layer: 13
-  m_Name: PatrolAndShootAI
+  m_Name: PatrolAndShootAI_Generated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11504,7 +11504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933253098782114682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.12, y: 0.05, z: -28.62}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1934661672687353726}
@@ -12025,6 +12025,7 @@ MonoBehaviour:
   brainActive: 1
   actionsFrequency: 0
   decisionFrequency: 0
+  generateDebugBrain: 0
 --- !u!114 &6545406736670395052
 MonoBehaviour:
   m_ObjectHideFlags: 0

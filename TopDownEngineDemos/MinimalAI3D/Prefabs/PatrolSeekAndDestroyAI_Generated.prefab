@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 6800963790818550641}
   - component: {fileID: 6800963790818550654}
   m_Layer: 13
-  m_Name: PatrolSeekAndDestroyAI
+  m_Name: PatrolSeekAndDestroyAI_Generated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -738,7 +738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6800963790818550655}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.5, y: 0.05, z: 19.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6802819425631442437}
@@ -1274,6 +1274,7 @@ MonoBehaviour:
   brainActive: 1
   actionsFrequency: 0
   decisionFrequency: 0
+  generateDebugBrain: 0
 --- !u!114 &6800963790818550600
 MonoBehaviour:
   m_ObjectHideFlags: 0
