@@ -5682,7 +5682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6144315931299460604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.1, y: 0.05, z: 18.4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6147473674408398420}
@@ -6199,6 +6199,7 @@ MonoBehaviour:
   brainActive: 1
   actionsFrequency: 0
   decisionFrequency: 0
+  generateDebugBrain: 0
 --- !u!114 &7954675821038112885
 MonoBehaviour:
   m_ObjectHideFlags: 0
