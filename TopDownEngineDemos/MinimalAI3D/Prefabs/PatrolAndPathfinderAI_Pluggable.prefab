@@ -1765,7 +1765,7 @@ MonoBehaviour:
   ActionsFrequency: 0
   DecisionFrequency: 0
   aiBrainGraphs:
-  - {fileID: 11400000, guid: 49b732a912df49b48b3f3ada4264a88f, type: 2}
+  - {fileID: 11400000, guid: 43c08720675dc424ab52af7d4d66e0ff, type: 2}
 --- !u!1 &5196834803601038122
 GameObject:
   m_ObjectHideFlags: 0

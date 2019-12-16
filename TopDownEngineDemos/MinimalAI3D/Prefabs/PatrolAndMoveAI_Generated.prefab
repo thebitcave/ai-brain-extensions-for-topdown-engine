@@ -6195,7 +6195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ec7461de2ec4542af5cecbeacbe763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiBrainGraph: {fileID: 11400000, guid: bd08ad2d891295341ab7d0ab06fcd527, type: 2}
+  aiBrainGraph: {fileID: 11400000, guid: a6aaaf4c9701c8a439781340d27e4e2b, type: 2}
   brainActive: 1
   actionsFrequency: 0
   decisionFrequency: 0
