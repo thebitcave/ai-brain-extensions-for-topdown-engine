@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6645377309991938404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f672de869f8d4446a3a4bf487c3a2f2, type: 3}
+  m_Name: AI Decision Detect Target Radius 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -248}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -6645377309991938404}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -4142258641264349827}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  radius: 8
+  detectionOriginOffset: {x: 0, y: 0, z: 0}
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 6400
+  targetCheckFrequency: 1
 --- !u!114 &-4142258641264349827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,7 +67,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 6273088870310822795}
+        node: {fileID: -6645377309991938404}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -82,11 +122,7 @@ MonoBehaviour:
   - {fileID: 4296877755201798663}
   - {fileID: 6737292206363017384}
   - {fileID: -4142258641264349827}
-  - {fileID: 6273088870310822795}
-  - {fileID: 7071031589951795563}
-  - {fileID: 8605215430062869222}
-  - {fileID: 1958752030461587799}
-  - {fileID: 7392784038036342557}
+  - {fileID: -6645377309991938404}
   startingNode: {fileID: 4296877755201798663}
 --- !u!114 &1958752030461587799
 MonoBehaviour:
@@ -154,10 +190,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 7071031589951795563}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: 1958752030461587799}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -253,10 +289,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 8605215430062869222}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: 7392784038036342557}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

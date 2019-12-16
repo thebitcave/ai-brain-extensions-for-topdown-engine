@@ -115,10 +115,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -2165875688336699510}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: 2926013585068892007}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -180,11 +180,48 @@ MonoBehaviour:
   - {fileID: 4638146390022144695}
   - {fileID: -5796196671712149959}
   - {fileID: 6146517760215068488}
-  - {fileID: -6265913389418865815}
-  - {fileID: -8791004150937171700}
-  - {fileID: -2165875688336699510}
-  - {fileID: 2926013585068892007}
+  - {fileID: 487601125262483735}
   startingNode: {fileID: 4638146390022144695}
+--- !u!114 &487601125262483735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f672de869f8d4446a3a4bf487c3a2f2, type: 3}
+  m_Name: AI Decision Detect Target Radius 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -8, y: -232}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 487601125262483735}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: 6146517760215068488}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  radius: 8
+  detectionOriginOffset: {x: 0, y: 0, z: 0}
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 6400
+  targetCheckFrequency: 1
 --- !u!114 &2926013585068892007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,10 +291,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -8791004150937171700}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: 2926013585068892007}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -302,7 +339,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -6265913389418865815}
+        node: {fileID: 487601125262483735}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
