@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8034867992280114004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63098443c080bc1448c5044bdfbd0989, type: 3}
+  m_Name: AI Action Do Nothing
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: 56}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -8034867992280114004}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: 750448817731838154}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &-7389761739533387868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +277,37 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
+--- !u!114 &-2159987216413478130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5aae9dd8c68664ca5c1c778cd68f35, type: 3}
+  m_Name: AI Action Aim Weapon At Movement
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: -120}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -2159987216413478130}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: 1396417028088720040}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &-892060334608711582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +346,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 0}
+        node: {fileID: 5109348439179768324}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -361,6 +423,10 @@ MonoBehaviour:
   - {fileID: 7927366159176214924}
   - {fileID: 3509807853504345799}
   - {fileID: -780402453013014435}
+  - {fileID: 5109348439179768324}
+  - {fileID: -8034867992280114004}
+  - {fileID: -2159987216413478130}
+  - {fileID: 4385988936657139092}
   startingNode: {fileID: 1396417028088720040}
 --- !u!114 &750448817731838154
 MonoBehaviour:
@@ -400,7 +466,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 0}
+        node: {fileID: -8034867992280114004}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -459,10 +525,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 0}
+        node: {fileID: 4385988936657139092}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: 0}
+        node: {fileID: -2159987216413478130}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -520,6 +586,76 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1048832
   targetCheckFrequency: 1
+--- !u!114 &4385988936657139092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e24c60ac10f364bb33fb1df2101a30, type: 3}
+  m_Name: AI Action Move Patrol 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: -392}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 4385988936657139092}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: 1396417028088720040}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  changeDirectionOnObstacle: 1
+  obstacleDetectionDistance: 1
+  obstaclesCheckFrequency: 1
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 6400
+--- !u!114 &5109348439179768324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154f6a74fe034f4ab675847b519567c, type: 3}
+  m_Name: AI Action Shoot 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -472, y: 344}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 5109348439179768324}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -892060334608711582}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  aimAtTarget: 1
+  shootOffset: {x: 0, y: 1.8, z: 0}
 --- !u!114 &5682656615851336686
 MonoBehaviour:
   m_ObjectHideFlags: 0

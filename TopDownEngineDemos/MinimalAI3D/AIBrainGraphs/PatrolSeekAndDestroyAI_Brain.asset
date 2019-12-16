@@ -33,6 +33,105 @@ MonoBehaviour:
   label: 
   afterTimeMin: 3
   afterTimeMax: 3
+--- !u!114 &-8150321278494677196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5aae9dd8c68664ca5c1c778cd68f35, type: 3}
+  m_Name: AI Action Aim Weapon At Movement
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -968, y: -168}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -8150321278494677196}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -1330640022530514595}
+        reroutePoints: []
+      - fieldName: actions
+        node: {fileID: -1290175543575141193}
+        reroutePoints: []
+      - fieldName: actions
+        node: {fileID: -3589376618508879735}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+--- !u!114 &-7953143212740331279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63098443c080bc1448c5044bdfbd0989, type: 3}
+  m_Name: AI Action Do Nothing
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -792, y: -24}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -7953143212740331279}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -1290175543575141193}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+--- !u!114 &-6983775812243995489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abfe37f76db4294b9c2e543dc2ae163, type: 3}
+  m_Name: AI Action Pathfinder To Target 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -792, y: 72}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -6983775812243995489}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -1290175543575141193}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &-6371376694930524236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +278,12 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: output
         node: {fileID: 0}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: 7116283837076877905}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -8150321278494677196}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -439,6 +544,12 @@ MonoBehaviour:
       - fieldName: output
         node: {fileID: 0}
         reroutePoints: []
+      - fieldName: output
+        node: {fileID: -633481203628566695}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -8150321278494677196}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -503,6 +614,15 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: output
         node: {fileID: 0}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -7953143212740331279}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -6983775812243995489}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -8150321278494677196}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -620,6 +740,43 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+--- !u!114 &-633481203628566695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e24c60ac10f364bb33fb1df2101a30, type: 3}
+  m_Name: AI Action Move Patrol 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -808, y: -376}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -633481203628566695}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -1330640022530514595}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  changeDirectionOnObstacle: 1
+  obstacleDetectionDistance: 1
+  obstaclesCheckFrequency: 1
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 6400
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,6 +803,12 @@ MonoBehaviour:
   - {fileID: -6190092999932527498}
   - {fileID: -1341678216108989702}
   - {fileID: 8695650160662807174}
+  - {fileID: -633481203628566695}
+  - {fileID: 8084544138111541790}
+  - {fileID: -7953143212740331279}
+  - {fileID: -8150321278494677196}
+  - {fileID: -6983775812243995489}
+  - {fileID: 7116283837076877905}
   startingNode: {fileID: -1330640022530514595}
 --- !u!114 &371246840885182512
 MonoBehaviour:
@@ -799,6 +962,9 @@ MonoBehaviour:
       connections:
       - fieldName: output
         node: {fileID: 0}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: 8084544138111541790}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -957,6 +1123,37 @@ MonoBehaviour:
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 6400
+--- !u!114 &7116283837076877905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abfe37f76db4294b9c2e543dc2ae163, type: 3}
+  m_Name: AI Action Pathfinder To Target 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -792, y: 504}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 7116283837076877905}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -3589376618508879735}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &7872565429095019566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,6 +1185,39 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
+--- !u!114 &8084544138111541790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154f6a74fe034f4ab675847b519567c, type: 3}
+  m_Name: AI Action Shoot 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -808, y: 216}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 8084544138111541790}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: 4780776054399859906}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  aimAtTarget: 0
+  shootOffset: {x: 0, y: 1.8, z: 0}
 --- !u!114 &8222585412634371990
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -120,6 +120,12 @@ MonoBehaviour:
       - fieldName: output
         node: {fileID: 0}
         reroutePoints: []
+      - fieldName: output
+        node: {fileID: 4278946143750825619}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -841728848383606626}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -133,6 +139,43 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+--- !u!114 &-3331669817788271724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e24c60ac10f364bb33fb1df2101a30, type: 3}
+  m_Name: AI Action Move Patrol 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -424, y: -216}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -3331669817788271724}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: 4638146390022144695}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  changeDirectionOnObstacle: 1
+  obstacleDetectionDistance: 1
+  obstaclesCheckFrequency: 1
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 6400
 --- !u!114 &-2165875688336699510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +207,37 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
+--- !u!114 &-841728848383606626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abfe37f76db4294b9c2e543dc2ae163, type: 3}
+  m_Name: AI Action Pathfinder To Target 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -408, y: 200}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -841728848383606626}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -5796196671712149959}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +255,9 @@ MonoBehaviour:
   - {fileID: -5796196671712149959}
   - {fileID: 6146517760215068488}
   - {fileID: 487601125262483735}
+  - {fileID: -3331669817788271724}
+  - {fileID: -841728848383606626}
+  - {fileID: 4278946143750825619}
   startingNode: {fileID: 4638146390022144695}
 --- !u!114 &487601125262483735
 MonoBehaviour:
@@ -256,6 +333,40 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
+--- !u!114 &4278946143750825619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5aae9dd8c68664ca5c1c778cd68f35, type: 3}
+  m_Name: AI Action Aim Weapon At Movement
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -408, y: 40}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 4278946143750825619}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: 4638146390022144695}
+        reroutePoints: []
+      - fieldName: actions
+        node: {fileID: -5796196671712149959}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &4638146390022144695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +406,12 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: output
         node: {fileID: 0}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -3331669817788271724}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: 4278946143750825619}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
