@@ -60,7 +60,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -9076793304315530291}
+        node: {fileID: -1341678216108989702}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -99,6 +99,44 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+--- !u!114 &-6190092999932527498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587f88c06a4048641b94443c5dc9080b, type: 3}
+  m_Name: AI Decision Line Of Sight To Target 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: 216}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -6190092999932527498}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -950484242678347807}
+        reroutePoints: []
+      - fieldName: decision
+        node: {fileID: 8222585412634371990}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 1050880
+  lineOfSightOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &-3589376618508879735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +150,7 @@ MonoBehaviour:
   m_Name: BackToPatrolling
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -232, y: 696}
+  position: {x: -248, y: 696}
   ports:
     keys:
     - statesIn
@@ -137,10 +175,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -2241702438772428466}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: -3577227502202885744}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -222,7 +260,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -1930724297624355621}
+        node: {fileID: 8695650160662807174}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -325,6 +363,39 @@ MonoBehaviour:
   label: 
   comparisonMode: 1
   distance: 1
+--- !u!114 &-1341678216108989702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d5715c27891d24791437b6ce242906, type: 3}
+  m_Name: AI Decision Time In State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -312, y: -104}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -1341678216108989702}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -6371376694930524236}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  afterTimeMin: 3
+  afterTimeMax: 3
 --- !u!114 &-1330640022530514595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,10 +434,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 7027009288203493681}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: -3577227502202885744}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -425,13 +496,13 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 7872565429095019566}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: -1162446090466179947}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: -3577227502202885744}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -510,7 +581,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 6162968601783485366}
+        node: {fileID: -6190092999932527498}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -571,16 +642,10 @@ MonoBehaviour:
   - {fileID: -6371376694930524236}
   - {fileID: 8222585412634371990}
   - {fileID: -2905888967646925671}
-  - {fileID: 371246840885182512}
-  - {fileID: 7027009288203493681}
-  - {fileID: 6162968601783485366}
-  - {fileID: 3295785299379924471}
-  - {fileID: 7872565429095019566}
-  - {fileID: -3577227502202885744}
-  - {fileID: -1162446090466179947}
-  - {fileID: -9076793304315530291}
-  - {fileID: -2241702438772428466}
-  - {fileID: -1930724297624355621}
+  - {fileID: 3982337198143604909}
+  - {fileID: -6190092999932527498}
+  - {fileID: -1341678216108989702}
+  - {fileID: 8695650160662807174}
   startingNode: {fileID: -1330640022530514595}
 --- !u!114 &371246840885182512
 MonoBehaviour:
@@ -655,6 +720,46 @@ MonoBehaviour:
   label: 
   aimAtTarget: 1
   shootOffset: {x: 0, y: 1.8, z: 0}
+--- !u!114 &3982337198143604909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f672de869f8d4446a3a4bf487c3a2f2, type: 3}
+  m_Name: AI Decision Detect Target Radius 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -344, y: -456}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 3982337198143604909}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: 4836936286167397463}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  radius: 15
+  detectionOriginOffset: {x: 0, y: 0, z: 0}
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1048832
+  targetCheckFrequency: 1
 --- !u!114 &4780776054399859906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,7 +798,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 3295785299379924471}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -738,7 +843,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 371246840885182512}
+        node: {fileID: 3982337198143604909}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -910,7 +1015,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 6162968601783485366}
+        node: {fileID: -6190092999932527498}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -949,3 +1054,36 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+--- !u!114 &8695650160662807174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c316b072e2bb8498c740be027133e5, type: 3}
+  m_Name: AI Decision Distance To Target
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -328, y: 552}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 8695650160662807174}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -2905888967646925671}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  comparisonMode: 1
+  distance: 1
