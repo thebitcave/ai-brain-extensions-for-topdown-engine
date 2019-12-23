@@ -1,0 +1,1 @@
+Tool documentation is available here: https://thebitcave.gitbook.io/ai-brain-extensions-docs/
