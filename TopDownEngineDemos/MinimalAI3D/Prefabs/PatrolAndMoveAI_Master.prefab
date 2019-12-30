@@ -305,12 +305,12 @@ GameObject:
   - component: {fileID: 9208383530767292808}
   - component: {fileID: 5414077251921424566}
   - component: {fileID: 986367296188357023}
-  - component: {fileID: 3189944555762610925}
-  - component: {fileID: 8718316445167406437}
-  - component: {fileID: 775781768359069255}
-  - component: {fileID: 7158620403897086783}
-  - component: {fileID: 8917856453954408563}
-  - component: {fileID: 623133905980728604}
+  - component: {fileID: 8863939226732204131}
+  - component: {fileID: 4847453783932061439}
+  - component: {fileID: 8884063992780626723}
+  - component: {fileID: 6647727593307770703}
+  - component: {fileID: 5548577377972766010}
+  - component: {fileID: 1264119168150519462}
   m_Layer: 13
   m_Name: PatrolAndMoveAI_Master
   m_TagString: Untagged
@@ -857,7 +857,7 @@ MonoBehaviour:
   actionsFrequency: 0
   decisionFrequency: 0
   generateDebugBrain: 0
---- !u!114 &3189944555762610925
+--- !u!114 &8863939226732204131
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -876,7 +876,7 @@ MonoBehaviour:
   ObstacleLayerMask:
     serializedVersion: 2
     m_Bits: 6400
---- !u!114 &8718316445167406437
+--- !u!114 &4847453783932061439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -890,7 +890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   MinimumDistance: 1
---- !u!114 &775781768359069255
+--- !u!114 &8884063992780626723
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &7158620403897086783
+--- !u!114 &6647727593307770703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -916,9 +916,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  ChannelName: channel_1
+  Channel: {fileID: 11400000, guid: dac9439441012c444bc8f788af348cc3, type: 2}
   StateName: PathfindToTarget
---- !u!114 &8917856453954408563
+--- !u!114 &5548577377972766010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -941,7 +941,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 6400
   TargetCheckFrequency: 1
---- !u!114 &623133905980728604
+--- !u!114 &1264119168150519462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -957,19 +957,19 @@ MonoBehaviour:
   - StateName: Patrolling
     Actions:
       array:
-      - {fileID: 3189944555762610925}
-      - {fileID: 775781768359069255}
+      - {fileID: 8863939226732204131}
+      - {fileID: 8884063992780626723}
     Transitions:
       array:
-      - Decision: {fileID: 8917856453954408563}
+      - Decision: {fileID: 5548577377972766010}
         TrueState: MoveTowardsTarget
         FalseState: 
   - StateName: MoveTowardsTarget
     Actions:
       array:
-      - {fileID: 8718316445167406437}
-      - {fileID: 775781768359069255}
-      - {fileID: 7158620403897086783}
+      - {fileID: 4847453783932061439}
+      - {fileID: 8884063992780626723}
+      - {fileID: 6647727593307770703}
     Transitions:
       array: []
   BrainActive: 1

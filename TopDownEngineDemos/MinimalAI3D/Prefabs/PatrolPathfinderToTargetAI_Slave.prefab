@@ -11534,7 +11534,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2861997420753267850}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.5, y: 0.05, z: 19.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12068,9 +12068,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityFeedbacks: {fileID: 0}
-  ChannelNames:
-  - channel_1
-  executeSelfSentCommands: 0
+  Channels:
+  - {fileID: 11400000, guid: dac9439441012c444bc8f788af348cc3, type: 2}
+  ExecuteSelfSentCommands: 0
 --- !u!114 &5534230524704928039
 MonoBehaviour:
   m_ObjectHideFlags: 0
