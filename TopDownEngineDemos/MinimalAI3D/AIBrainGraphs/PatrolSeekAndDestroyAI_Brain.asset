@@ -101,6 +101,37 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
+--- !u!114 &-7753810970767304802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c37e1bfa38e8b45a7bd9e8c6a46917, type: 3}
+  m_Name: BackToPatrolling
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 536, y: 168}
+  ports:
+    keys:
+    - statesIn
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -7753810970767304802}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: -6371376694930524236}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  stateName: BackToPatrolling
 --- !u!114 &-6983775812243995489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +163,37 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
+--- !u!114 &-6930126012762423413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c37e1bfa38e8b45a7bd9e8c6a46917, type: 3}
+  m_Name: Patrolling
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 520, y: 600}
+  ports:
+    keys:
+    - statesIn
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -6930126012762423413}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: -2905888967646925671}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  stateName: Patrolling
 --- !u!114 &-6371376694930524236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +245,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
-        node: {fileID: -3589376618508879735}
+        node: {fileID: -7753810970767304802}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -236,6 +298,37 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1050880
   lineOfSightOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &-4310018004336754086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c37e1bfa38e8b45a7bd9e8c6a46917, type: 3}
+  m_Name: Destroying
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 520, y: 24}
+  ports:
+    keys:
+    - statesIn
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -4310018004336754086}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: -950484242678347807}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  stateName: Destroying
 --- !u!114 &-3589376618508879735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,10 +353,7 @@ MonoBehaviour:
       _node: {fileID: -3589376618508879735}
       _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: trueState
-        node: {fileID: -6371376694930524236}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -301,6 +391,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  canTransitionToSelf: 1
 --- !u!114 &-3577227502202885744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +480,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
-        node: {fileID: -1330640022530514595}
+        node: {fileID: -6930126012762423413}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -525,10 +616,7 @@ MonoBehaviour:
       _node: {fileID: -1330640022530514595}
       _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: trueState
-        node: {fileID: -2905888967646925671}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -566,6 +654,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  canTransitionToSelf: 1
 --- !u!114 &-1290175543575141193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,13 +679,7 @@ MonoBehaviour:
       _node: {fileID: -1290175543575141193}
       _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: trueState
-        node: {fileID: 4836936286167397463}
-        reroutePoints: []
-      - fieldName: falseState
-        node: {fileID: 8222585412634371990}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -643,6 +726,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  canTransitionToSelf: 1
 --- !u!114 &-1162446090466179947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,7 +809,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
-        node: {fileID: 4780776054399859906}
+        node: {fileID: -4310018004336754086}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -809,6 +893,10 @@ MonoBehaviour:
   - {fileID: -8150321278494677196}
   - {fileID: -6983775812243995489}
   - {fileID: 7116283837076877905}
+  - {fileID: 1319628587275616719}
+  - {fileID: -4310018004336754086}
+  - {fileID: -7753810970767304802}
+  - {fileID: -6930126012762423413}
   startingNode: {fileID: -1330640022530514595}
 --- !u!114 &371246840885182512
 MonoBehaviour:
@@ -850,6 +938,40 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1048832
   targetCheckFrequency: 1
+--- !u!114 &1319628587275616719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c37e1bfa38e8b45a7bd9e8c6a46917, type: 3}
+  m_Name: Seeking
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 984, y: 168}
+  ports:
+    keys:
+    - statesIn
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: 1319628587275616719}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: 4836936286167397463}
+        reroutePoints: []
+      - fieldName: falseState
+        node: {fileID: 8222585412634371990}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  stateName: Seeking
 --- !u!114 &3295785299379924471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,10 +1069,7 @@ MonoBehaviour:
       _node: {fileID: 4780776054399859906}
       _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: trueState
-        node: {fileID: -950484242678347807}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -982,6 +1101,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  canTransitionToSelf: 1
 --- !u!114 &4836936286167397463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1153,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
-        node: {fileID: -1290175543575141193}
+        node: {fileID: 1319628587275616719}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -1278,7 +1398,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
-        node: {fileID: -1290175543575141193}
+        node: {fileID: 1319628587275616719}
         reroutePoints: []
       _direction: 1
       _connectionType: 1

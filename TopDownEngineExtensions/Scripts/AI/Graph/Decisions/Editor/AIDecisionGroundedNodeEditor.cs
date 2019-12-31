@@ -9,12 +9,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
     {
         private SerializedProperty _groundedBufferDelay;
         
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _groundedBufferDelay = serializedObject.FindProperty("groundedBufferDelay");
 
             serializedObject.Update();

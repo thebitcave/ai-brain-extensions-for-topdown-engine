@@ -12,12 +12,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _obstaclesCheckFrequency;
         private SerializedProperty _obstacleLayerMask;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _changeDirectionOnObstacle = serializedObject.FindProperty("changeDirectionOnObstacle");
             _obstacleDetectionDistance = serializedObject.FindProperty("obstacleDetectionDistance");
             _obstaclesCheckFrequency = serializedObject.FindProperty("obstaclesCheckFrequency");

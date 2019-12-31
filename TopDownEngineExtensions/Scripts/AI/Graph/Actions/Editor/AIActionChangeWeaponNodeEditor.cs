@@ -9,12 +9,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
     {
         private SerializedProperty _newWeapon;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _newWeapon = serializedObject.FindProperty("newWeapon");
 
             serializedObject.Update();

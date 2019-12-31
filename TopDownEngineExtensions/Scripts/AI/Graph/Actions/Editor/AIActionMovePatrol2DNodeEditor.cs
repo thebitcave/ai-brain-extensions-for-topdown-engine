@@ -10,12 +10,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _changeDirectionOnObstacle;
         private SerializedProperty _obstaclesLayerMask;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _changeDirectionOnObstacle = serializedObject.FindProperty("changeDirectionOnObstacle");
             _obstaclesLayerMask = serializedObject.FindProperty("obstaclesLayerMask");
 

@@ -10,12 +10,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _aimAtTarget;
         private SerializedProperty _shootOffset;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _aimAtTarget = serializedObject.FindProperty("aimAtTarget");
             _shootOffset = serializedObject.FindProperty("shootOffset");
 

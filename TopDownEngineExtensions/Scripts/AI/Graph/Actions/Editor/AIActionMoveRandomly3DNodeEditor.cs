@@ -14,12 +14,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _minimumRandomDirection;
         private SerializedProperty _maximumRandomDirection;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-
-            if (CollapseNodeOn) return;
-
             _maximumDurationInADirection = serializedObject.FindProperty("maximumDurationInADirection");
             _obstacleLayerMask = serializedObject.FindProperty("obstacleLayerMask");
             _obstaclesDetectionDistance = serializedObject.FindProperty("obstaclesDetectionDistance");

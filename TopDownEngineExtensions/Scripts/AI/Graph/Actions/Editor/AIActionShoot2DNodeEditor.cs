@@ -10,12 +10,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _faceTarget;
         private SerializedProperty _aimAtTarget;
 
-        public override void OnBodyGUI()
+        protected override void SerializeAdditionalProperties()
         {
-            base.OnBodyGUI();
-            
-            if (CollapseNodeOn) return;
-
             _faceTarget = serializedObject.FindProperty("faceTarget");
             _aimAtTarget = serializedObject.FindProperty("aimAtTarget");
 
