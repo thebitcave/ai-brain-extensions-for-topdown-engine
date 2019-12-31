@@ -14,6 +14,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _comparisonMode = serializedObject.FindProperty("comparisonMode");
             _distance = serializedObject.FindProperty("distance");
 

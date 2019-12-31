@@ -14,6 +14,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _afterTimeMin = serializedObject.FindProperty("afterTimeMin");
             _afterTimeMax = serializedObject.FindProperty("afterTimeMax");
 

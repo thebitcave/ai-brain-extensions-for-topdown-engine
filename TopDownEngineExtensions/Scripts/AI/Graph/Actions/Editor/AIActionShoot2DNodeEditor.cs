@@ -14,6 +14,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _faceTarget = serializedObject.FindProperty("faceTarget");
             _aimAtTarget = serializedObject.FindProperty("aimAtTarget");
 

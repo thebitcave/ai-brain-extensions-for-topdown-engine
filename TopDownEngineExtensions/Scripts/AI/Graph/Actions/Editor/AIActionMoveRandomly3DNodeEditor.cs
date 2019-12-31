@@ -18,6 +18,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
 
+            if (CollapseNodeOn) return;
+
             _maximumDurationInADirection = serializedObject.FindProperty("maximumDurationInADirection");
             _obstacleLayerMask = serializedObject.FindProperty("obstacleLayerMask");
             _obstaclesDetectionDistance = serializedObject.FindProperty("obstaclesDetectionDistance");

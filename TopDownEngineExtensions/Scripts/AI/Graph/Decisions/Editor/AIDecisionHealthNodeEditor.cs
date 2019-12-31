@@ -15,6 +15,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _trueIfHealthIs = serializedObject.FindProperty("trueIfHealthIs");
             _healthValue = serializedObject.FindProperty("healthValue");
             _onlyOnce = serializedObject.FindProperty("onlyOnce");

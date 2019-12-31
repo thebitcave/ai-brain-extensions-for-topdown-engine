@@ -16,6 +16,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _changeDirectionOnObstacle = serializedObject.FindProperty("changeDirectionOnObstacle");
             _obstacleDetectionDistance = serializedObject.FindProperty("obstacleDetectionDistance");
             _obstaclesCheckFrequency = serializedObject.FindProperty("obstaclesCheckFrequency");

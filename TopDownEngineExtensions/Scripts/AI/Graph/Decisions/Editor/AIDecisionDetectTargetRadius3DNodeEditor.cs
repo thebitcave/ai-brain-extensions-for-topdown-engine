@@ -17,6 +17,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _radius = serializedObject.FindProperty("radius");
             _detectionOriginOffset = serializedObject.FindProperty("detectionOriginOffset");
             _targetLayerMask = serializedObject.FindProperty("targetLayerMask");

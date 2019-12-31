@@ -14,6 +14,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             base.OnBodyGUI();
             
+            if (CollapseNodeOn) return;
+
             _obstacleLayerMask = serializedObject.FindProperty("obstacleLayerMask");
             _lineOfSightOffset = serializedObject.FindProperty("lineOfSightOffset");
 
