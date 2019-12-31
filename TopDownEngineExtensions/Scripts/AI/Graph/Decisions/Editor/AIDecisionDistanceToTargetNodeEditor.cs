@@ -5,7 +5,7 @@ using XNodeEditor;
 namespace TheBitCave.TopDownEngineExensions.AI.Graph
 {
     [CustomNodeEditor(typeof(AIDecisionDistanceToTargetNode))]
-    public class AIDecisionDistanceToTargetNodeEditor: AIActionNodeEditor
+    public class AIDecisionDistanceToTargetNodeEditor: AIDecisionNodeEditor
     {
         private SerializedProperty _comparisonMode;
         private SerializedProperty _distance;
