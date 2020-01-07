@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: AI Action Do Nothing
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -792, y: -24}
+  position: {x: -792, y: 40}
   ports:
     keys:
     - output
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: AI Action Pathfinder To Target 3D
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -792, y: 72}
+  position: {x: -792, y: 136}
   ports:
     keys:
     - output
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Name: AI Action Pathfinder To Target 3D
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -792, y: 504}
+  position: {x: -808, y: 744}
   ports:
     keys:
     - output
@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_Name: AI Action Shoot 3D
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -808, y: 216}
+  position: {x: -792, y: 328}
   ports:
     keys:
     - output
