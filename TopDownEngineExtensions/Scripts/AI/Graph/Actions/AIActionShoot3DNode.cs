@@ -13,12 +13,14 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
     {
         public bool aimAtTarget = false;
         public Vector3 shootOffset;
+        public bool lockVerticalAim = false;
 
         public override AIAction AddActionComponent(GameObject go)
         {
             var action = go.AddComponent<AIActionShoot3D>();
             action.AimAtTarget = aimAtTarget;
             action.ShootOffset = shootOffset;
+            action.LockVerticalAim = lockVerticalAim;
             action.Label = label;
             return action;
         }
