@@ -14,13 +14,15 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         [Header("Obstacle Detection")]
         public bool changeDirectionOnObstacle = true;
         public LayerMask obstaclesLayerMask;
-
+        public float obstaclesCheckFrequency = 1f;
+        
         public override AIAction AddActionComponent(GameObject go)
         {
             var action = go.AddComponent<AIActionMovePatrol2D>();
             action.Label = label;
             action.ChangeDirectionOnObstacle = changeDirectionOnObstacle;
             action.ObstaclesLayerMask = obstaclesLayerMask;
+            action.ObstaclesCheckFrequency = obstaclesCheckFrequency;
             return action;
         }
     }
