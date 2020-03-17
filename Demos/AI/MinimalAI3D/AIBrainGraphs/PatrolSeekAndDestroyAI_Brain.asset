@@ -121,8 +121,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: -7753810970767304802}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
         node: {fileID: -6371376694930524236}
@@ -183,8 +183,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: -6930126012762423413}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
         node: {fileID: -2905888967646925671}
@@ -241,8 +241,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: -6371376694930524236}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
         node: {fileID: -7753810970767304802}
@@ -253,8 +253,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: -6371376694930524236}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
       _connectionType: 1
@@ -318,8 +318,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: -4310018004336754086}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
         node: {fileID: -950484242678347807}
@@ -351,8 +351,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: -3589376618508879735}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 0
@@ -476,8 +476,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: -2905888967646925671}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
         node: {fileID: -6930126012762423413}
@@ -488,8 +488,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: -2905888967646925671}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
       _connectionType: 1
@@ -614,8 +614,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: -1330640022530514595}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 0
@@ -677,8 +677,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: -1290175543575141193}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 0
@@ -805,8 +805,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: -950484242678347807}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
         node: {fileID: -4310018004336754086}
@@ -817,8 +817,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: -950484242678347807}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
       _connectionType: 1
@@ -958,8 +958,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: 1319628587275616719}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
         node: {fileID: 4836936286167397463}
@@ -1067,8 +1067,8 @@ MonoBehaviour:
     values:
     - _fieldName: statesIn
       _node: {fileID: 4780776054399859906}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 0
@@ -1149,8 +1149,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: 4836936286167397463}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
         node: {fileID: 1319628587275616719}
@@ -1161,8 +1161,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: 4836936286167397463}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
       _connectionType: 1
@@ -1336,8 +1336,9 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
-  aimAtTarget: 0
+  aimAtTarget: 1
   shootOffset: {x: 0, y: 1.8, z: 0}
+  lockVerticalAim: 0
 --- !u!114 &8222585412634371990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1385,8 +1386,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: trueState
       _node: {fileID: 8222585412634371990}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
       _connectionType: 1
@@ -1394,8 +1395,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: falseState
       _node: {fileID: 8222585412634371990}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
         node: {fileID: 1319628587275616719}
