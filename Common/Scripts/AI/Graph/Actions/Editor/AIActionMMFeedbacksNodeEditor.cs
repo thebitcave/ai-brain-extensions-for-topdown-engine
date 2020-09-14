@@ -23,7 +23,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             serializedObject.ApplyModifiedProperties();
             EditorGUILayout.Space();
             EditorGUILayout.HelpBox(
-                "Target Feedbacks property is hidden in this node. You will have to manually add it once the generator has been executed (this means you cannot use it with the AIBrainPluggable).",
+                "Target Feedbacks property is hidden. You will have to manually add it once the generator has been executed or assign it at runtime.",
                 MessageType.Warning);
         }
     }
