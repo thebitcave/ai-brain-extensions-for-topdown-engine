@@ -364,12 +364,6 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: output
         node: {fileID: 7116283837076877905}
         reroutePoints: []
       - fieldName: output
@@ -627,12 +621,6 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: output
         node: {fileID: -633481203628566695}
         reroutePoints: []
       - fieldName: output
@@ -689,15 +677,6 @@ MonoBehaviour:
       _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
-      - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
       - fieldName: output
         node: {fileID: -7953143212740331279}
         reroutePoints: []
@@ -1079,9 +1058,6 @@ MonoBehaviour:
       _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: output
-        node: {fileID: 0}
-        reroutePoints: []
       - fieldName: output
         node: {fileID: 8084544138111541790}
         reroutePoints: []
