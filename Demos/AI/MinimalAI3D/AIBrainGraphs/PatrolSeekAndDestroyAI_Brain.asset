@@ -33,6 +33,68 @@ MonoBehaviour:
   label: 
   afterTimeMin: 3
   afterTimeMax: 3
+--- !u!114 &-8769706664849367543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c37e1bfa38e8b45a7bd9e8c6a46917, type: 3}
+  m_Name: SetLastKnownPosition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 552, y: 440}
+  ports:
+    keys:
+    - statesIn
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -8769706664849367543}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: falseState
+        node: {fileID: 8222585412634371990}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  stateName: SetLastKnownPosition
+--- !u!114 &-8445064653049494503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99c7e4984751b2418c42af4a1b60758, type: 3}
+  m_Name: AI Action Pathfinder To Patrol 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -792, y: 728}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -8445064653049494503}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -3589376618508879735}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &-8150321278494677196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +176,7 @@ MonoBehaviour:
   m_Name: BackToPatrolling
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 536, y: 168}
+  position: {x: 504, y: 8}
   ports:
     keys:
     - statesIn
@@ -194,6 +256,37 @@ MonoBehaviour:
       _typeConstraint: 2
       _dynamic: 0
   stateName: Patrolling
+--- !u!114 &-6880358223851229559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e27808fab05f4290c46e6c75fb949, type: 3}
+  m_Name: AI Action Set Last Known Position As Target
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -792, y: -456}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -6880358223851229559}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: actions
+        node: {fileID: -1732797312385888774}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &-6371376694930524236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +300,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 344, y: 152}
+  position: {x: 296, y: -8}
   ports:
     keys:
     - decision
@@ -260,44 +353,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
---- !u!114 &-6190092999932527498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587f88c06a4048641b94443c5dc9080b, type: 3}
-  m_Name: AI Decision Line Of Sight To Target 3D
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -296, y: 216}
-  ports:
-    keys:
-    - output
-    values:
-    - _fieldName: output
-      _node: {fileID: -6190092999932527498}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: decision
-        node: {fileID: -950484242678347807}
-        reroutePoints: []
-      - fieldName: decision
-        node: {fileID: 8222585412634371990}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  label: 
-  obstacleLayerMask:
-    serializedVersion: 2
-    m_Bits: 1050880
-  lineOfSightOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &-4310018004336754086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +366,7 @@ MonoBehaviour:
   m_Name: Destroying
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 520, y: 24}
+  position: {x: 504, y: 216}
   ports:
     keys:
     - statesIn
@@ -364,10 +419,10 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: 7116283837076877905}
+        node: {fileID: -8150321278494677196}
         reroutePoints: []
       - fieldName: output
-        node: {fileID: -8150321278494677196}
+        node: {fileID: -8445064653049494503}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -386,6 +441,37 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   canTransitionToSelf: 1
+--- !u!114 &-3583370960584152692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4557208bf94f5f6449f529791d1733bd, type: 3}
+  m_Name: AI Decision Next Frame
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -328, y: -408}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -3583370960584152692}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -2100118901982643573}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
 --- !u!114 &-3577227502202885744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +606,72 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   label: 
+--- !u!114 &-2100118901982643573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4813333ead4977a408f315682cbf3a7d, type: 3}
+  m_Name: AI Transition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 296, y: -312}
+  ports:
+    keys:
+    - decision
+    - input
+    - trueState
+    - falseState
+    values:
+    - _fieldName: decision
+      _node: {fileID: -2100118901982643573}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -3583370960584152692}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: input
+      _node: {fileID: -2100118901982643573}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: transitions
+        node: {fileID: -1732797312385888774}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: trueState
+      _node: {fileID: -2100118901982643573}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: statesIn
+        node: {fileID: 1319628587275616719}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: falseState
+      _node: {fileID: -2100118901982643573}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
 --- !u!114 &-1930724297624355621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +705,63 @@ MonoBehaviour:
   label: 
   comparisonMode: 1
   distance: 1
+--- !u!114 &-1732797312385888774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7644114ceede8c74ca6fd8d3b53d5a23, type: 3}
+  m_Name: SetLastKnownPosition
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -248, y: -296}
+  ports:
+    keys:
+    - statesIn
+    - actions
+    - transitions
+    values:
+    - _fieldName: statesIn
+      _node: {fileID: -1732797312385888774}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.StateConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: trueState
+        node: {fileID: 4836936286167397463}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: actions
+      _node: {fileID: -1732797312385888774}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: output
+        node: {fileID: -6880358223851229559}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: transitions
+      _node: {fileID: -1732797312385888774}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.TransitionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: -2100118901982643573}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  canTransitionToSelf: 1
 --- !u!114 &-1341678216108989702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,7 +808,7 @@ MonoBehaviour:
   m_Name: Patrolling
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -248, y: -232}
+  position: {x: -264, y: -632}
   ports:
     keys:
     - statesIn
@@ -750,7 +959,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 344, y: 8}
+  position: {x: 296, y: 200}
   ports:
     keys:
     - decision
@@ -764,7 +973,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -6190092999932527498}
+        node: {fileID: 5912948673284097481}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -816,7 +1025,7 @@ MonoBehaviour:
   m_Name: AI Action Move Patrol 3D
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -808, y: -376}
+  position: {x: -808, y: -776}
   ports:
     keys:
     - output
@@ -863,7 +1072,6 @@ MonoBehaviour:
   - {fileID: 8222585412634371990}
   - {fileID: -2905888967646925671}
   - {fileID: 3982337198143604909}
-  - {fileID: -6190092999932527498}
   - {fileID: -1341678216108989702}
   - {fileID: 8695650160662807174}
   - {fileID: -633481203628566695}
@@ -871,11 +1079,17 @@ MonoBehaviour:
   - {fileID: -7953143212740331279}
   - {fileID: -8150321278494677196}
   - {fileID: -6983775812243995489}
-  - {fileID: 7116283837076877905}
   - {fileID: 1319628587275616719}
   - {fileID: -4310018004336754086}
   - {fileID: -7753810970767304802}
   - {fileID: -6930126012762423413}
+  - {fileID: -1732797312385888774}
+  - {fileID: -2100118901982643573}
+  - {fileID: -3583370960584152692}
+  - {fileID: -6880358223851229559}
+  - {fileID: 5912948673284097481}
+  - {fileID: -8769706664849367543}
+  - {fileID: -8445064653049494503}
   startingNode: {fileID: -1330640022530514595}
 --- !u!114 &371246840885182512
 MonoBehaviour:
@@ -930,7 +1144,7 @@ MonoBehaviour:
   m_Name: Seeking
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 984, y: 168}
+  position: {x: 504, y: -296}
   ports:
     keys:
     - statesIn
@@ -941,10 +1155,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: trueState
-        node: {fileID: 4836936286167397463}
-        reroutePoints: []
-      - fieldName: falseState
-        node: {fileID: 8222585412634371990}
+        node: {fileID: -2100118901982643573}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -997,7 +1208,7 @@ MonoBehaviour:
   m_Name: AI Decision Detect Target Radius 3D
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -344, y: -456}
+  position: {x: -360, y: -856}
   ports:
     keys:
     - output
@@ -1091,7 +1302,7 @@ MonoBehaviour:
   m_Name: AI Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 328, y: -280}
+  position: {x: 312, y: -680}
   ports:
     keys:
     - decision
@@ -1129,7 +1340,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
-        node: {fileID: 1319628587275616719}
+        node: {fileID: -1732797312385888774}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -1144,6 +1355,41 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+--- !u!114 &5912948673284097481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa2be622e5685f44891eeb98b450aa0, type: 3}
+  m_Name: AI Decision Detect Target Cone Of Vision 3D
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -312, y: 232}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 5912948673284097481}
+      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.DecisionConnection,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: decision
+        node: {fileID: -950484242678347807}
+        reroutePoints: []
+      - fieldName: decision
+        node: {fileID: 8222585412634371990}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  label: 
+  setTargetToNullIfNotFound: 0
 --- !u!114 &6162968601783485366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1219,37 +1465,6 @@ MonoBehaviour:
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 6400
---- !u!114 &7116283837076877905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5abfe37f76db4294b9c2e543dc2ae163, type: 3}
-  m_Name: AI Action Pathfinder To Target 3D
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -808, y: 744}
-  ports:
-    keys:
-    - output
-    values:
-    - _fieldName: output
-      _node: {fileID: 7116283837076877905}
-      _typeQualifiedName: TheBitCave.MMToolsExtensions.AI.Graph.ActionConnection,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: actions
-        node: {fileID: -3589376618508879735}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  label: 
 --- !u!114 &7872565429095019566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,7 +1557,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: output
-        node: {fileID: -6190092999932527498}
+        node: {fileID: 5912948673284097481}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1375,7 +1590,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: statesIn
-        node: {fileID: 1319628587275616719}
+        node: {fileID: -8769706664849367543}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
