@@ -21,6 +21,5 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             // action.NewAIBrain = newAIBrain;
             return action;
         }
-
     }
 }
