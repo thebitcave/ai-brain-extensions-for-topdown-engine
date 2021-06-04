@@ -11,6 +11,10 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
     [CreateNodeMenu("AI/Action/3D/Shoot")]
     public class AIActionShoot3DNode : AIActionNode
     {
+        //     [Header("Binding")] 
+        //     public CharacterHandleWeapon targetHandleWeaponAbility;
+
+        [Header("Behaviour")] 
         public bool aimAtTarget = false;
         public Vector3 shootOffset;
         public bool lockVerticalAim = false;
@@ -18,6 +22,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         public override AIAction AddActionComponent(GameObject go)
         {
             var action = go.AddComponent<AIActionShoot3D>();
+            //         action.TargetHandleWeaponAbility = targetHandleWeaponAbility;
             action.AimAtTarget = aimAtTarget;
             action.ShootOffset = shootOffset;
             action.LockVerticalAim = lockVerticalAim;
