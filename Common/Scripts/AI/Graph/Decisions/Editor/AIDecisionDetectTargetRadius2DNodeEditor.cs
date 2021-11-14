@@ -10,6 +10,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _radius;
         private SerializedProperty _detectionOriginOffset;
         private SerializedProperty _targetLayer;
+        private SerializedProperty _obstacleDetection;
         private SerializedProperty _obstacleMask;
         
         public override void OnBodyGUI()
@@ -19,6 +20,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             _radius = serializedObject.FindProperty("radius");
             _detectionOriginOffset = serializedObject.FindProperty("detectionOriginOffset");
             _targetLayer = serializedObject.FindProperty("targetLayer");
+            _obstacleDetection = serializedObject.FindProperty("obstacleDetection");
             _obstacleMask = serializedObject.FindProperty("obstacleMask");
 
             serializedObject.Update();
@@ -26,6 +28,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             NodeEditorGUILayout.PropertyField(_radius);
             NodeEditorGUILayout.PropertyField(_detectionOriginOffset);
             NodeEditorGUILayout.PropertyField(_targetLayer);
+            NodeEditorGUILayout.PropertyField(_obstacleDetection);
             NodeEditorGUILayout.PropertyField(_obstacleMask);
             serializedObject.ApplyModifiedProperties();
         }
