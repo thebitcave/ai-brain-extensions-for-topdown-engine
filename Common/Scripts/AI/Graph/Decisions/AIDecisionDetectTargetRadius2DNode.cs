@@ -14,6 +14,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         public float radius = 3f;
         public Vector3 detectionOriginOffset = new Vector3(0, 0, 0);
         public LayerMask targetLayer;
+        public bool obstacleDetection = true;
         public LayerMask obstacleMask;
 
         public override AIDecision AddDecisionComponent(GameObject go)
@@ -23,6 +24,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             decision.Radius = radius;
             decision.DetectionOriginOffset = detectionOriginOffset;
             decision.TargetLayer = targetLayer;
+            decision.ObstacleDetection = obstacleDetection;
             decision.ObstacleMask = obstacleMask;
             return decision;
         }

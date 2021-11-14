@@ -14,6 +14,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         public float radius = 3f;
         public Vector3 detectionOriginOffset = new Vector3(0, 0, 0);
         public LayerMask targetLayerMask;
+        public bool obstacleDetection = true;
         public LayerMask obstacleMask;
         public float targetCheckFrequency = 1f;
 
@@ -23,6 +24,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             decision.Label = label;
             decision.Radius = radius;
             decision.DetectionOriginOffset = detectionOriginOffset;
+            decision.ObstacleDetection = obstacleDetection;
             decision.TargetLayerMask = targetLayerMask;
             decision.ObstacleMask = obstacleMask;
             decision.TargetCheckFrequency = targetCheckFrequency;
