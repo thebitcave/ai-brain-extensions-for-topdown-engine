@@ -4,8 +4,8 @@ using XNodeEditor;
 
 namespace TheBitCave.TopDownEngineExensions.AI.Graph
 {
-    [CustomNodeEditor(typeof(AIActionRotateTowardsTarget3DNode))]
-    public class AIActionRotateTowardsTarget3DNodeEditor : AIActionNodeEditor
+    [CustomNodeEditor(typeof(AIActionRotateTowardsTarget2DNode))]
+    public class AIActionRotateTowardsTarget2DNodeEditor : AIActionNodeEditor
     {
         private SerializedProperty _lockRotationX;
 
