@@ -12,6 +12,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _targetLayer;
         private SerializedProperty _obstacleDetection;
         private SerializedProperty _obstacleMask;
+        private SerializedProperty _canTargetSelf;
         
         public override void OnBodyGUI()
         {
@@ -22,6 +23,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             _targetLayer = serializedObject.FindProperty("targetLayer");
             _obstacleDetection = serializedObject.FindProperty("obstacleDetection");
             _obstacleMask = serializedObject.FindProperty("obstacleMask");
+            _canTargetSelf = serializedObject.FindProperty("canTargetSelf");
 
             serializedObject.Update();
             EditorGUIUtility.labelWidth = 120;
@@ -30,6 +32,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             NodeEditorGUILayout.PropertyField(_targetLayer);
             NodeEditorGUILayout.PropertyField(_obstacleDetection);
             NodeEditorGUILayout.PropertyField(_obstacleMask);
+            NodeEditorGUILayout.PropertyField(_canTargetSelf);
             serializedObject.ApplyModifiedProperties();
         }
     }
