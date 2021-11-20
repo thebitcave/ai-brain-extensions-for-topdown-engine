@@ -16,6 +16,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         public LayerMask targetLayer;
         public bool obstacleDetection = true;
         public LayerMask obstacleMask;
+        public bool canTargetSelf = false;
 
         public override AIDecision AddDecisionComponent(GameObject go)
         {
@@ -26,6 +27,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             decision.TargetLayer = targetLayer;
             decision.ObstacleDetection = obstacleDetection;
             decision.ObstacleMask = obstacleMask;
+            decision.CanTargetSelf = canTargetSelf;
             return decision;
         }
     }
