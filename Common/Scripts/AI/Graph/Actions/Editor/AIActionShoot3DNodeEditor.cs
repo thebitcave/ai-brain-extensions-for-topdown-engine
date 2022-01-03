@@ -20,10 +20,11 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             _lockVerticalAim = serializedObject.FindProperty("lockVerticalAim");
 
             serializedObject.Update();
-            EditorGUIUtility.labelWidth = 105;
+            EditorGUIUtility.labelWidth = 85;
             //          NodeEditorGUILayout.PropertyField(_targetHandleWeaponAbility);
             NodeEditorGUILayout.PropertyField(_aimAtTarget);
             NodeEditorGUILayout.PropertyField(_shootOffset);
+            EditorGUIUtility.labelWidth = 110;
             NodeEditorGUILayout.PropertyField(_lockVerticalAim);
             
             EditorGUILayout.HelpBox(
