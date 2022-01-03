@@ -18,7 +18,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             serializedObject.Update();
          //   EditorGUIUtility.labelWidth = 110;
          //   NodeEditorGUILayout.PropertyField(_targetFeedbacks);
-            EditorGUIUtility.labelWidth = 175;
+            EditorGUIUtility.labelWidth = 200;
             NodeEditorGUILayout.PropertyField(_onlyPlayWhenEnteringState);
             serializedObject.ApplyModifiedProperties();
             EditorGUILayout.Space();

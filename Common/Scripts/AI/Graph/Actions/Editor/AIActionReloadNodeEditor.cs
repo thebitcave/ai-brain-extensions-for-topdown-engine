@@ -15,7 +15,7 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             _onlyReloadOnceInThisState = serializedObject.FindProperty("onlyReloadOnceInThisState");
 
             serializedObject.Update();
-            EditorGUIUtility.labelWidth = 100;
+            EditorGUIUtility.labelWidth = 200;
             NodeEditorGUILayout.PropertyField(_onlyReloadOnceInThisState);
             serializedObject.ApplyModifiedProperties();
         }
