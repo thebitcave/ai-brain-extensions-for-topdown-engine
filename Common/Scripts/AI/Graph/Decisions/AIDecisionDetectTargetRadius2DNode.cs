@@ -16,7 +16,10 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         public LayerMask targetLayer;
         public bool obstacleDetection = true;
         public LayerMask obstacleMask;
+        public AIDecisionDetectTargetRadius2D.ObstaclesDetectionModes obstaclesDetectionMode = AIDecisionDetectTargetRadius2D.ObstaclesDetectionModes.Raycast;
         public bool canTargetSelf = false;
+        public float targetCheckFrequency = 1f;
+        public int overlapMaximum = 10;
 
         public override AIDecision AddDecisionComponent(GameObject go)
         {
@@ -27,7 +30,10 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             decision.TargetLayer = targetLayer;
             decision.ObstacleDetection = obstacleDetection;
             decision.ObstacleMask = obstacleMask;
+            decision.ObstaclesDetectionMode = obstaclesDetectionMode;
             decision.CanTargetSelf = canTargetSelf;
+            decision.TargetCheckFrequency = targetCheckFrequency;
+            decision.OverlapMaximum = overlapMaximum;
             return decision;
         }
     }

@@ -12,8 +12,11 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         private SerializedProperty _targetLayer;
         private SerializedProperty _obstacleDetection;
         private SerializedProperty _obstacleMask;
+        private SerializedProperty _obstaclesDetectionMode;
         private SerializedProperty _canTargetSelf;
-        
+        private SerializedProperty _targetCheckFrequency;
+        private SerializedProperty _overlapMaximum;
+
         public override void OnBodyGUI()
         {
             base.OnBodyGUI();
@@ -23,16 +26,22 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
             _targetLayer = serializedObject.FindProperty("targetLayer");
             _obstacleDetection = serializedObject.FindProperty("obstacleDetection");
             _obstacleMask = serializedObject.FindProperty("obstacleMask");
+            _obstaclesDetectionMode = serializedObject.FindProperty("obstaclesDetectionMode");
             _canTargetSelf = serializedObject.FindProperty("canTargetSelf");
+            _targetCheckFrequency = serializedObject.FindProperty("targetCheckFrequency");
+            _overlapMaximum = serializedObject.FindProperty("overlapMaximum");
 
             serializedObject.Update();
-            EditorGUIUtility.labelWidth = 120;
+            EditorGUIUtility.labelWidth = 160;
             NodeEditorGUILayout.PropertyField(_radius);
             NodeEditorGUILayout.PropertyField(_detectionOriginOffset);
             NodeEditorGUILayout.PropertyField(_targetLayer);
             NodeEditorGUILayout.PropertyField(_obstacleDetection);
             NodeEditorGUILayout.PropertyField(_obstacleMask);
+            NodeEditorGUILayout.PropertyField(_obstaclesDetectionMode);
             NodeEditorGUILayout.PropertyField(_canTargetSelf);
+            NodeEditorGUILayout.PropertyField(_targetCheckFrequency);
+            NodeEditorGUILayout.PropertyField(_overlapMaximum);
             serializedObject.ApplyModifiedProperties();
         }
     }
